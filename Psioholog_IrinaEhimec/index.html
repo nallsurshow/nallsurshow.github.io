@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Психолог — Имя Фамилия</title>
+<meta name="description" content="Психолог, консультации, терапия — Имя Фамилия. Онлайн и офлайн приём, индивидуальная работа, психологическое сопровождение." />
+
+
+<style>
+/* Reset + basic layout */
+:root{
+--accent:#6b8eeb;
+--bg:#f7f8fc;
+--card:#ffffff;
+--text:#17212b;
+--muted:#5b6b78;
+--radius:14px;
+font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:linear-gradient(180deg,var(--bg),#ffffff 200px);color:var(--text);-webkit-font-smoothing:antialiased}
+
+
+.container{max-width:980px;margin:24px auto;padding:20px}
+
+
+/* Header */
+header.card{display:flex;align-items:center;gap:16px;padding:18px;background:var(--card);border-radius:var(--radius);box-shadow:0 6px 20px rgba(20,30,60,0.06)}
+.avatar{flex:0 0 92px;height:92px;border-radius:12px;overflow:hidden;background:linear-gradient(135deg,var(--accent),#9bd3ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:22px}
+.profile h1{margin:0;font-size:20px}
+.profile p{margin:6px 0 0;color:var(--muted)}
+
+
+/* Actions */
+.actions{margin-left:auto;display:flex;gap:8px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:10px;border:0;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(107,142,235,0.18)}
+
+
+/* Two-column layout */
+.grid{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:18px}
+.card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 14px rgba(20,30,60,0.04)}
+
+
+/* About */
+.about h2{margin-top:0}
+.list{display:grid;gap:8px}
+.list .item{padding:10px;border-radius:10px;border:1px dashed rgba(20,30,60,0.04);background:linear-gradient(180deg,rgba(11,18,35,0.01),transparent)}
+
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.gallery img{width:100%;height:160px;object-fit:cover;border-radius:10px}
+
+
+/* Contact card */
+.contact .meta{display:flex;flex-direction:column;gap:6px}
+.contact a{color:var(--accent);text-decoration:none;font-weight:600}
+
+
+/* Footer */
+footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+
+
+/* Mobile responsiveness */
+@media (max-width:880px){
+.grid{grid-template-columns:1fr}
+.avatar{flex:0 0 72px;height:72px}
+.actions{margin-left:0}
+.gallery img{height:120px}
+}
+
+
+/* Tiny helper: visible placeholders */
+.placeholder{display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:700}
+
+
+</style>
+</head>
+<body>
+<div class="container">
+<!-- Header / hero -->
+<header class="card">
+<div class="avatar">АФ</div>
+<div class="profile">
+<h1>Имя Фамилия</h1>
+<p>Клинический психолог • Психотерапевт • Онлайн-консультации</p>
+</div>
+
+
+<div class="actions">
+<a class="btn" href="tel:+491234567890">Позвонить</a>
+<a class="btn ghost" href="mailto:email@example.com">Написать</a>
+</div>
+</header>
+
+
+<!-- Main content -->
+<div class="grid">
+<!-- Left column: about, services, reviews, diplomas -->
+<main>
+<section class="card about">
+<h2>О себе</h2>
+<p>Короткое профессиональное описание: имя, опыт (например, "10 лет работы с тревогой, стрессом, семейными и личностными кризисами"), подход (КПТ/гештальт/психодинамика) и формат приёма (очно / онлайн).</p>
+<div style="height:12px"></div>
+
+
+<h3>Услуги</h3>
+<div class="list">
+<div class="item">Индивидуальная терапия (45–60 мин)</div>
+<div class="item">Парная терапия / семейные консультации</div>
+<div class="item">Психодиагностика и сопровождение</div>
+</div>
+</section>
+
+
+<section class="card" style="margin-top:14px">
+<h2>Дипломы и сертификаты</h2>
+<p>Ниже пример: замените <code>images/diploma-1.jpg</code> на реальные файлы.</p>
+<div class="gallery" style="margin-top:8px">
